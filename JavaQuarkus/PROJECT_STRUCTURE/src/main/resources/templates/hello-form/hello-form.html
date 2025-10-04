@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js"></script>
+        <title>Hello Form</title>
+    </head>
+    <body>
+        <form hx-post="/hello-form"
+            hx-target="#greeting"
+            hx-swap="innerHTML">
+            <input type="text" name="name" placeholder="Enter your name"> <br>
+            <input type="text" name="email" placeholder="Enter your email"> <br>
+            <input type="text" name="age" placeholder="Enter your age"> <br>
+
+            <label>
+                <input type="checkbox" name="kvkk">
+                I have read and approved the KVKK text.
+            </label><br>
+
+            <button type="submit"><b>Print User Information</b></button>
+        </form>
+
+        <hr>
+
+        <div id="greeting">
+            {#include hello-form/greeting.html/}
+        </div>
+    </body>   
+</html>

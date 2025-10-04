@@ -1,0 +1,17 @@
+@hostaddress = http://localhost:8080
+
+POST {{hostaddress}}/hello
+Content-Type: application/json
+
+{
+  "name": "Haluk",
+  "age": 20,
+  "school": {
+    "name": "Pertevniyal High School"
+  },
+  "classNotes": {
+    "math": 95,
+    "his": 88,
+    "sci": 92
+  }
+}
