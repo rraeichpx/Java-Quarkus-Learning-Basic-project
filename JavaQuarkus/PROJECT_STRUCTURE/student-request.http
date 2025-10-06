@@ -7,7 +7,15 @@ Content-Type: application/json
   "name": "Haluk",
   "age": 20,
   "school": {
-    "name": "Pertevniyal High School"
+    "name": "Pertevniyal High School",
+    "address": {
+      "addressGeneral": "303 Simplify Way, 166. Street 12-1 Banly Munich / Germany",
+      "zipCode": "5115"
+    }
+  },
+  "address": {
+    "addressGeneral": "303 Country Band Road, 98. Street California / U.S.A",
+    "zipCode": "90027"
   },
   "classNotes": {
     "math": 95,
